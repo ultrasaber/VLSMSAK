@@ -8,6 +8,10 @@ namespace Logic
 {
     public static class NumberLogic
     {
+        /*
+         * Employs a modified version of code found at:
+         * http://www.dotnetperls.com/binary-representation
+         */
         public const int BINARY_NUMBER_LENGTH = 8;
 
         public static string IntToBinary(int n)
