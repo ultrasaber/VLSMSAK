@@ -1,0 +1,5 @@
+c:\Users\Jarren\documents\visual studio 2015\Projects\VLSMSAK\Logic\bin\Debug\Logic.dll
+c:\Users\Jarren\documents\visual studio 2015\Projects\VLSMSAK\Logic\bin\Debug\Logic.pdb
+c:\Users\Jarren\documents\visual studio 2015\Projects\VLSMSAK\Logic\obj\Debug\Logic.dll
+c:\Users\Jarren\documents\visual studio 2015\Projects\VLSMSAK\Logic\obj\Debug\Logic.pdb
+C:\Users\Jarren\documents\visual studio 2015\Projects\VLSMSAK\Logic\obj\Debug\Logic.csprojResolveAssemblyReference.cache

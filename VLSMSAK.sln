@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VLSMSAK", "VLSMSAK\VLSMSAK.csproj", "{344274C5-8739-42E9-BF9A-C57B6B36480B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{72EECE81-E17F-4F4A-972E-8A78A23711EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogicTests", "LogicTests\LogicTests.csproj", "{1C008E63-AA3A-4976-A992-AD91E76825A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{344274C5-8739-42E9-BF9A-C57B6B36480B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{344274C5-8739-42E9-BF9A-C57B6B36480B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{344274C5-8739-42E9-BF9A-C57B6B36480B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{344274C5-8739-42E9-BF9A-C57B6B36480B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72EECE81-E17F-4F4A-972E-8A78A23711EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72EECE81-E17F-4F4A-972E-8A78A23711EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72EECE81-E17F-4F4A-972E-8A78A23711EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72EECE81-E17F-4F4A-972E-8A78A23711EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C008E63-AA3A-4976-A992-AD91E76825A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C008E63-AA3A-4976-A992-AD91E76825A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C008E63-AA3A-4976-A992-AD91E76825A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C008E63-AA3A-4976-A992-AD91E76825A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+c:\Users\Jarren\documents\visual studio 2015\Projects\VLSMSAK\LogicTests\bin\Debug\LogicTests.dll
+c:\Users\Jarren\documents\visual studio 2015\Projects\VLSMSAK\LogicTests\bin\Debug\LogicTests.pdb
+c:\Users\Jarren\documents\visual studio 2015\Projects\VLSMSAK\LogicTests\bin\Debug\Logic.dll
+c:\Users\Jarren\documents\visual studio 2015\Projects\VLSMSAK\LogicTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+c:\Users\Jarren\documents\visual studio 2015\Projects\VLSMSAK\LogicTests\bin\Debug\Logic.pdb
+c:\Users\Jarren\documents\visual studio 2015\Projects\VLSMSAK\LogicTests\obj\Debug\LogicTests.csprojResolveAssemblyReference.cache
+c:\Users\Jarren\documents\visual studio 2015\Projects\VLSMSAK\LogicTests\obj\Debug\LogicTests.dll
+c:\Users\Jarren\documents\visual studio 2015\Projects\VLSMSAK\LogicTests\obj\Debug\LogicTests.pdb

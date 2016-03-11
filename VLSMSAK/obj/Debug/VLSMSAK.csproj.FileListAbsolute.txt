@@ -1,0 +1,11 @@
+c:\users\jarren\documents\visual studio 2015\Projects\VLSMSAK\VLSMSAK\bin\Debug\VLSMSAK.exe.config
+c:\users\jarren\documents\visual studio 2015\Projects\VLSMSAK\VLSMSAK\bin\Debug\VLSMSAK.exe
+c:\users\jarren\documents\visual studio 2015\Projects\VLSMSAK\VLSMSAK\bin\Debug\VLSMSAK.pdb
+c:\users\jarren\documents\visual studio 2015\Projects\VLSMSAK\VLSMSAK\obj\Debug\VLSMSAK.csprojResolveAssemblyReference.cache
+c:\users\jarren\documents\visual studio 2015\Projects\VLSMSAK\VLSMSAK\obj\Debug\VLSMSAK.frmMain.resources
+c:\users\jarren\documents\visual studio 2015\Projects\VLSMSAK\VLSMSAK\obj\Debug\VLSMSAK.Properties.Resources.resources
+c:\users\jarren\documents\visual studio 2015\Projects\VLSMSAK\VLSMSAK\obj\Debug\VLSMSAK.csproj.GenerateResource.Cache
+c:\users\jarren\documents\visual studio 2015\Projects\VLSMSAK\VLSMSAK\obj\Debug\VLSMSAK.exe
+c:\users\jarren\documents\visual studio 2015\Projects\VLSMSAK\VLSMSAK\obj\Debug\VLSMSAK.pdb
+c:\users\jarren\documents\visual studio 2015\Projects\VLSMSAK\VLSMSAK\bin\Debug\Logic.dll
+c:\users\jarren\documents\visual studio 2015\Projects\VLSMSAK\VLSMSAK\bin\Debug\Logic.pdb
