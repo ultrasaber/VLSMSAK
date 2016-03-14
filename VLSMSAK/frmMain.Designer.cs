@@ -46,6 +46,8 @@
             this.grpLastHostAddress = new System.Windows.Forms.GroupBox();
             this.txtLastHostAddressDecimal = new System.Windows.Forms.TextBox();
             this.txtLastHostAddressBinary = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cmbCIDRMask = new System.Windows.Forms.ComboBox();
             this.grpHostIPAddress.SuspendLayout();
             this.grpSubnetMask.SuspendLayout();
             this.grpNetworkID.SuspendLayout();
@@ -59,7 +61,7 @@
             this.txtInputHostIP.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtInputHostIP.Location = new System.Drawing.Point(6, 19);
             this.txtInputHostIP.Name = "txtInputHostIP";
-            this.txtInputHostIP.Size = new System.Drawing.Size(492, 32);
+            this.txtInputHostIP.Size = new System.Drawing.Size(409, 32);
             this.txtInputHostIP.TabIndex = 0;
             this.txtInputHostIP.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtInputHostIP.TextChanged += new System.EventHandler(this.txtInput_TextChanged);
@@ -78,6 +80,8 @@
             // 
             // grpHostIPAddress
             // 
+            this.grpHostIPAddress.Controls.Add(this.cmbCIDRMask);
+            this.grpHostIPAddress.Controls.Add(this.label1);
             this.grpHostIPAddress.Controls.Add(this.txtInputHostIP);
             this.grpHostIPAddress.Controls.Add(this.txtOutputHostIP);
             this.grpHostIPAddress.Location = new System.Drawing.Point(12, 12);
@@ -260,6 +264,27 @@
             this.txtLastHostAddressBinary.Text = "00000000.00000000.00000000.00000000";
             this.txtLastHostAddressBinary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(421, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(22, 24);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "/";
+            // 
+            // cmbCIDRMask
+            // 
+            this.cmbCIDRMask.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCIDRMask.FormattingEnabled = true;
+            this.cmbCIDRMask.Location = new System.Drawing.Point(445, 19);
+            this.cmbCIDRMask.MaxDropDownItems = 33;
+            this.cmbCIDRMask.Name = "cmbCIDRMask";
+            this.cmbCIDRMask.Size = new System.Drawing.Size(53, 32);
+            this.cmbCIDRMask.TabIndex = 3;
+            this.cmbCIDRMask.SelectedIndexChanged += new System.EventHandler(this.cmbCIDRMask_SelectedIndexChanged);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -309,6 +334,8 @@
         private System.Windows.Forms.GroupBox grpLastHostAddress;
         private System.Windows.Forms.TextBox txtLastHostAddressDecimal;
         private System.Windows.Forms.TextBox txtLastHostAddressBinary;
+        private System.Windows.Forms.ComboBox cmbCIDRMask;
+        private System.Windows.Forms.Label label1;
     }
 }
 

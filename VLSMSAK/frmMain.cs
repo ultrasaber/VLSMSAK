@@ -16,6 +16,11 @@ namespace VLSMSAK
         public frmMain()
         {
             InitializeComponent();
+
+            for (int i = 0; i < 33; i++)
+            {
+                cmbCIDRMask.Items.Add(i);
+            }
         }
 
         private void txtInput_TextChanged(object sender, EventArgs e)
@@ -66,6 +71,32 @@ namespace VLSMSAK
         {
             CalculateBinaryForm((TextBox)sender, txtOutputSubnetMask);
             CreateNetworkHost();
+        }
+
+        private void cmbCIDRMask_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                string longBinary = "";
+
+                for (var i = 0; i < int.Parse(cmbCIDRMask.Text); i++)
+                {
+                    longBinary += "1";
+                }
+
+                while (longBinary.Length < 32)
+                {
+                    longBinary += "0";
+                }
+
+                txtInputSubnetMask.Text = new IPv4Address(String.Format("{0}.{1}.{2}.{3}",
+                        NumberLogic.BinaryToInt(longBinary.Substring(0, 8)),
+                        NumberLogic.BinaryToInt(longBinary.Substring(8, 8)),
+                        NumberLogic.BinaryToInt(longBinary.Substring(16, 8)),
+                        NumberLogic.BinaryToInt(longBinary.Substring(24, 8))
+                        )).ToString();
+            }
+            catch (Exception ex) { }
         }
     }
 }
