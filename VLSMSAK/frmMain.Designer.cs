@@ -283,7 +283,7 @@
             this.cmbCIDRMask.Name = "cmbCIDRMask";
             this.cmbCIDRMask.Size = new System.Drawing.Size(53, 32);
             this.cmbCIDRMask.TabIndex = 3;
-            this.cmbCIDRMask.SelectedIndexChanged += new System.EventHandler(this.cmbCIDRMask_SelectedIndexChanged);
+            this.cmbCIDRMask.TextChanged += new System.EventHandler(this.cmbCIDRMask_SelectedIndexChanged);
             // 
             // frmMain
             // 
