@@ -52,6 +52,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="IPv4AddressTests.cs" />
+    <Compile Include="NetworkHostTests.cs" />
     <Compile Include="NumberLogicTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

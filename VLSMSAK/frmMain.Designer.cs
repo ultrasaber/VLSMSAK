@@ -37,9 +37,21 @@
             this.grpNetworkID = new System.Windows.Forms.GroupBox();
             this.txtNetworkIDDecimal = new System.Windows.Forms.TextBox();
             this.txtNetworkIDBinary = new System.Windows.Forms.TextBox();
+            this.grpFirstHostAddress = new System.Windows.Forms.GroupBox();
+            this.txtFirstHostAddressDecimal = new System.Windows.Forms.TextBox();
+            this.txtFirstHostAddressBinary = new System.Windows.Forms.TextBox();
+            this.grpBroadcastAddress = new System.Windows.Forms.GroupBox();
+            this.txtBroadcastAddressDecimal = new System.Windows.Forms.TextBox();
+            this.txtBroadcastAddressBinary = new System.Windows.Forms.TextBox();
+            this.grpLastHostAddress = new System.Windows.Forms.GroupBox();
+            this.txtLastHostAddressDecimal = new System.Windows.Forms.TextBox();
+            this.txtLastHostAddressBinary = new System.Windows.Forms.TextBox();
             this.grpHostIPAddress.SuspendLayout();
             this.grpSubnetMask.SuspendLayout();
             this.grpNetworkID.SuspendLayout();
+            this.grpFirstHostAddress.SuspendLayout();
+            this.grpBroadcastAddress.SuspendLayout();
+            this.grpLastHostAddress.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtInputHostIP
@@ -143,11 +155,119 @@
             this.txtNetworkIDBinary.Text = "00000000.00000000.00000000.00000000";
             this.txtNetworkIDBinary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // grpFirstHostAddress
+            // 
+            this.grpFirstHostAddress.Controls.Add(this.txtFirstHostAddressDecimal);
+            this.grpFirstHostAddress.Controls.Add(this.txtFirstHostAddressBinary);
+            this.grpFirstHostAddress.Location = new System.Drawing.Point(12, 327);
+            this.grpFirstHostAddress.Name = "grpFirstHostAddress";
+            this.grpFirstHostAddress.Size = new System.Drawing.Size(508, 99);
+            this.grpFirstHostAddress.TabIndex = 5;
+            this.grpFirstHostAddress.TabStop = false;
+            this.grpFirstHostAddress.Text = "First Host Address";
+            // 
+            // txtFirstHostAddressDecimal
+            // 
+            this.txtFirstHostAddressDecimal.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtFirstHostAddressDecimal.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstHostAddressDecimal.Location = new System.Drawing.Point(6, 19);
+            this.txtFirstHostAddressDecimal.Name = "txtFirstHostAddressDecimal";
+            this.txtFirstHostAddressDecimal.ReadOnly = true;
+            this.txtFirstHostAddressDecimal.Size = new System.Drawing.Size(492, 32);
+            this.txtFirstHostAddressDecimal.TabIndex = 0;
+            this.txtFirstHostAddressDecimal.Text = "0.0.0.0";
+            this.txtFirstHostAddressDecimal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtFirstHostAddressBinary
+            // 
+            this.txtFirstHostAddressBinary.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtFirstHostAddressBinary.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstHostAddressBinary.Location = new System.Drawing.Point(6, 57);
+            this.txtFirstHostAddressBinary.Name = "txtFirstHostAddressBinary";
+            this.txtFirstHostAddressBinary.ReadOnly = true;
+            this.txtFirstHostAddressBinary.Size = new System.Drawing.Size(492, 32);
+            this.txtFirstHostAddressBinary.TabIndex = 1;
+            this.txtFirstHostAddressBinary.Text = "00000000.00000000.00000000.00000000";
+            this.txtFirstHostAddressBinary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // grpBroadcastAddress
+            // 
+            this.grpBroadcastAddress.Controls.Add(this.txtBroadcastAddressDecimal);
+            this.grpBroadcastAddress.Controls.Add(this.txtBroadcastAddressBinary);
+            this.grpBroadcastAddress.Location = new System.Drawing.Point(12, 537);
+            this.grpBroadcastAddress.Name = "grpBroadcastAddress";
+            this.grpBroadcastAddress.Size = new System.Drawing.Size(508, 99);
+            this.grpBroadcastAddress.TabIndex = 6;
+            this.grpBroadcastAddress.TabStop = false;
+            this.grpBroadcastAddress.Text = "Broadcast Address";
+            // 
+            // txtBroadcastAddressDecimal
+            // 
+            this.txtBroadcastAddressDecimal.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtBroadcastAddressDecimal.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBroadcastAddressDecimal.Location = new System.Drawing.Point(6, 19);
+            this.txtBroadcastAddressDecimal.Name = "txtBroadcastAddressDecimal";
+            this.txtBroadcastAddressDecimal.ReadOnly = true;
+            this.txtBroadcastAddressDecimal.Size = new System.Drawing.Size(492, 32);
+            this.txtBroadcastAddressDecimal.TabIndex = 0;
+            this.txtBroadcastAddressDecimal.Text = "0.0.0.0";
+            this.txtBroadcastAddressDecimal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtBroadcastAddressBinary
+            // 
+            this.txtBroadcastAddressBinary.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtBroadcastAddressBinary.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBroadcastAddressBinary.Location = new System.Drawing.Point(6, 57);
+            this.txtBroadcastAddressBinary.Name = "txtBroadcastAddressBinary";
+            this.txtBroadcastAddressBinary.ReadOnly = true;
+            this.txtBroadcastAddressBinary.Size = new System.Drawing.Size(492, 32);
+            this.txtBroadcastAddressBinary.TabIndex = 1;
+            this.txtBroadcastAddressBinary.Text = "00000000.00000000.00000000.00000000";
+            this.txtBroadcastAddressBinary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // grpLastHostAddress
+            // 
+            this.grpLastHostAddress.Controls.Add(this.txtLastHostAddressDecimal);
+            this.grpLastHostAddress.Controls.Add(this.txtLastHostAddressBinary);
+            this.grpLastHostAddress.Location = new System.Drawing.Point(12, 432);
+            this.grpLastHostAddress.Name = "grpLastHostAddress";
+            this.grpLastHostAddress.Size = new System.Drawing.Size(508, 99);
+            this.grpLastHostAddress.TabIndex = 7;
+            this.grpLastHostAddress.TabStop = false;
+            this.grpLastHostAddress.Text = "Last Host Address";
+            // 
+            // txtLastHostAddressDecimal
+            // 
+            this.txtLastHostAddressDecimal.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtLastHostAddressDecimal.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastHostAddressDecimal.Location = new System.Drawing.Point(6, 19);
+            this.txtLastHostAddressDecimal.Name = "txtLastHostAddressDecimal";
+            this.txtLastHostAddressDecimal.ReadOnly = true;
+            this.txtLastHostAddressDecimal.Size = new System.Drawing.Size(492, 32);
+            this.txtLastHostAddressDecimal.TabIndex = 0;
+            this.txtLastHostAddressDecimal.Text = "0.0.0.0";
+            this.txtLastHostAddressDecimal.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtLastHostAddressBinary
+            // 
+            this.txtLastHostAddressBinary.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtLastHostAddressBinary.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastHostAddressBinary.Location = new System.Drawing.Point(6, 57);
+            this.txtLastHostAddressBinary.Name = "txtLastHostAddressBinary";
+            this.txtLastHostAddressBinary.ReadOnly = true;
+            this.txtLastHostAddressBinary.Size = new System.Drawing.Size(492, 32);
+            this.txtLastHostAddressBinary.TabIndex = 1;
+            this.txtLastHostAddressBinary.Text = "00000000.00000000.00000000.00000000";
+            this.txtLastHostAddressBinary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(528, 334);
+            this.ClientSize = new System.Drawing.Size(528, 643);
+            this.Controls.Add(this.grpLastHostAddress);
+            this.Controls.Add(this.grpBroadcastAddress);
+            this.Controls.Add(this.grpFirstHostAddress);
             this.Controls.Add(this.grpNetworkID);
             this.Controls.Add(this.grpSubnetMask);
             this.Controls.Add(this.grpHostIPAddress);
@@ -159,6 +279,12 @@
             this.grpSubnetMask.PerformLayout();
             this.grpNetworkID.ResumeLayout(false);
             this.grpNetworkID.PerformLayout();
+            this.grpFirstHostAddress.ResumeLayout(false);
+            this.grpFirstHostAddress.PerformLayout();
+            this.grpBroadcastAddress.ResumeLayout(false);
+            this.grpBroadcastAddress.PerformLayout();
+            this.grpLastHostAddress.ResumeLayout(false);
+            this.grpLastHostAddress.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -174,6 +300,15 @@
         private System.Windows.Forms.GroupBox grpNetworkID;
         private System.Windows.Forms.TextBox txtNetworkIDDecimal;
         private System.Windows.Forms.TextBox txtNetworkIDBinary;
+        private System.Windows.Forms.GroupBox grpFirstHostAddress;
+        private System.Windows.Forms.TextBox txtFirstHostAddressDecimal;
+        private System.Windows.Forms.TextBox txtFirstHostAddressBinary;
+        private System.Windows.Forms.GroupBox grpBroadcastAddress;
+        private System.Windows.Forms.TextBox txtBroadcastAddressDecimal;
+        private System.Windows.Forms.TextBox txtBroadcastAddressBinary;
+        private System.Windows.Forms.GroupBox grpLastHostAddress;
+        private System.Windows.Forms.TextBox txtLastHostAddressDecimal;
+        private System.Windows.Forms.TextBox txtLastHostAddressBinary;
     }
 }
 

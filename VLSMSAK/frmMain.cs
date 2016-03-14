@@ -49,6 +49,15 @@ namespace VLSMSAK
 
                 txtNetworkIDDecimal.Text = networkHost.NetworkID.ToString();
                 CalculateBinaryForm(txtNetworkIDDecimal, txtNetworkIDBinary);
+
+                txtFirstHostAddressDecimal.Text = networkHost.FirstHostAddress.ToString();
+                CalculateBinaryForm(txtFirstHostAddressDecimal, txtFirstHostAddressBinary);
+
+                txtBroadcastAddressDecimal.Text = networkHost.BroadcastAddress.ToString();
+                CalculateBinaryForm(txtBroadcastAddressDecimal, txtBroadcastAddressBinary);
+
+                txtLastHostAddressDecimal.Text = networkHost.LastHostAddress.ToString();
+                CalculateBinaryForm(txtLastHostAddressDecimal, txtLastHostAddressBinary);
             }
             catch (Exception ex) { }
         }
