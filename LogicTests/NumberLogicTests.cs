@@ -19,5 +19,16 @@ namespace Logic.Tests
             Assert.AreEqual("11110000", NumberLogic.IntToBinary(240));
             Assert.AreEqual("00001111", NumberLogic.IntToBinary(15));
         }
+
+        [TestMethod()]
+        public void BinaryToIntTest()
+        {
+            Assert.AreEqual(255, NumberLogic.BinaryToInt("11111111"));
+            Assert.AreEqual(128, NumberLogic.BinaryToInt("10000000"));
+            Assert.AreEqual(17, NumberLogic.BinaryToInt("00010001"));
+            Assert.AreEqual(15, NumberLogic.BinaryToInt("1111"));
+            Assert.AreEqual(1, NumberLogic.BinaryToInt("1"));
+            Assert.AreEqual(0, NumberLogic.BinaryToInt("0"));
+        }
     }
 }

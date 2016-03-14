@@ -35,5 +35,17 @@ namespace Logic
             }
             return new string(b);
         }
+
+        public static int BinaryToInt(string b)
+        {
+            double result = 0;
+
+            for (int i = 0; i < b.Length; i++)
+            {
+                result += b.Substring(i,1) == "1" ? Math.Pow(2, (b.Length - 1) - i) : 0;
+            }
+
+            return (int)result;
+        }
     }
 }
