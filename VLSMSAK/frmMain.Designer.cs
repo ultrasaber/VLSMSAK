@@ -31,6 +31,8 @@
             this.txtInputHostIP = new System.Windows.Forms.TextBox();
             this.txtOutputHostIP = new System.Windows.Forms.TextBox();
             this.grpHostIPAddress = new System.Windows.Forms.GroupBox();
+            this.cmbCIDRMask = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.grpSubnetMask = new System.Windows.Forms.GroupBox();
             this.txtInputSubnetMask = new System.Windows.Forms.TextBox();
             this.txtOutputSubnetMask = new System.Windows.Forms.TextBox();
@@ -46,8 +48,6 @@
             this.grpLastHostAddress = new System.Windows.Forms.GroupBox();
             this.txtLastHostAddressDecimal = new System.Windows.Forms.TextBox();
             this.txtLastHostAddressBinary = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.cmbCIDRMask = new System.Windows.Forms.ComboBox();
             this.grpHostIPAddress.SuspendLayout();
             this.grpSubnetMask.SuspendLayout();
             this.grpNetworkID.SuspendLayout();
@@ -90,6 +90,27 @@
             this.grpHostIPAddress.TabIndex = 2;
             this.grpHostIPAddress.TabStop = false;
             this.grpHostIPAddress.Text = "Host IP Address";
+            // 
+            // cmbCIDRMask
+            // 
+            this.cmbCIDRMask.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCIDRMask.FormattingEnabled = true;
+            this.cmbCIDRMask.Location = new System.Drawing.Point(445, 19);
+            this.cmbCIDRMask.MaxDropDownItems = 33;
+            this.cmbCIDRMask.Name = "cmbCIDRMask";
+            this.cmbCIDRMask.Size = new System.Drawing.Size(53, 32);
+            this.cmbCIDRMask.TabIndex = 3;
+            this.cmbCIDRMask.TextChanged += new System.EventHandler(this.cmbCIDRMask_SelectedIndexChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(421, 22);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(22, 24);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "/";
             // 
             // grpSubnetMask
             // 
@@ -264,27 +285,6 @@
             this.txtLastHostAddressBinary.Text = "00000000.00000000.00000000.00000000";
             this.txtLastHostAddressBinary.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(421, 22);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(22, 24);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "/";
-            // 
-            // cmbCIDRMask
-            // 
-            this.cmbCIDRMask.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbCIDRMask.FormattingEnabled = true;
-            this.cmbCIDRMask.Location = new System.Drawing.Point(445, 19);
-            this.cmbCIDRMask.MaxDropDownItems = 33;
-            this.cmbCIDRMask.Name = "cmbCIDRMask";
-            this.cmbCIDRMask.Size = new System.Drawing.Size(53, 32);
-            this.cmbCIDRMask.TabIndex = 3;
-            this.cmbCIDRMask.TextChanged += new System.EventHandler(this.cmbCIDRMask_SelectedIndexChanged);
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,6 +296,7 @@
             this.Controls.Add(this.grpNetworkID);
             this.Controls.Add(this.grpSubnetMask);
             this.Controls.Add(this.grpHostIPAddress);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "frmMain";
             this.Text = "VLSMSAK";
             this.grpHostIPAddress.ResumeLayout(false);
