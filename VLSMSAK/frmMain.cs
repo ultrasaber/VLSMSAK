@@ -17,7 +17,7 @@ namespace VLSMSAK
         {
             InitializeComponent();
 
-            for (int i = 0; i < 33; i++)
+            for (int i = 0; i < 31; i++)
             {
                 cmbCIDRMask.Items.Add(i);
             }
@@ -63,6 +63,9 @@ namespace VLSMSAK
 
                 txtLastHostAddressDecimal.Text = networkHost.LastHostAddress.ToString();
                 CalculateBinaryForm(txtLastHostAddressDecimal, txtLastHostAddressBinary);
+
+                txtHosts.Text = String.Format("{0}", Math.Pow(2, 32 - Double.Parse(cmbCIDRMask.Text)) - 2);
+                txtNetworks.Text = String.Format("{0}", Math.Pow(2, Double.Parse(cmbCIDRMask.Text) - Double.Parse(txtOriginalCIDR.Text)));
             }
             catch (Exception ex) { }
         }

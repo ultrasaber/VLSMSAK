@@ -133,6 +133,14 @@ namespace Logic
             }
         }
 
+        public NetworkHost NextNetwork
+        {
+            get
+            {
+                return new NetworkHost(this.NextNetworkID, this.SubnetMask);
+            }
+        }
+
         public int CIDRMaskLength
         {
             get

@@ -50,6 +50,13 @@
             this.txtLastHostAddressBinary = new System.Windows.Forms.TextBox();
             this.grpNetworkControls = new System.Windows.Forms.GroupBox();
             this.btnNextNetwork = new System.Windows.Forms.Button();
+            this.grpHosts = new System.Windows.Forms.GroupBox();
+            this.txtHosts = new System.Windows.Forms.TextBox();
+            this.grpNetworks = new System.Windows.Forms.GroupBox();
+            this.txtNetworks = new System.Windows.Forms.TextBox();
+            this.grpOriginalCIDR = new System.Windows.Forms.GroupBox();
+            this.txtOriginalCIDR = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.grpHostIPAddress.SuspendLayout();
             this.grpSubnetMask.SuspendLayout();
             this.grpNetworkID.SuspendLayout();
@@ -57,6 +64,9 @@
             this.grpBroadcastAddress.SuspendLayout();
             this.grpLastHostAddress.SuspendLayout();
             this.grpNetworkControls.SuspendLayout();
+            this.grpHosts.SuspendLayout();
+            this.grpNetworks.SuspendLayout();
+            this.grpOriginalCIDR.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtInputHostIP
@@ -291,9 +301,9 @@
             // grpNetworkControls
             // 
             this.grpNetworkControls.Controls.Add(this.btnNextNetwork);
-            this.grpNetworkControls.Location = new System.Drawing.Point(526, 12);
+            this.grpNetworkControls.Location = new System.Drawing.Point(526, 222);
             this.grpNetworkControls.Name = "grpNetworkControls";
-            this.grpNetworkControls.Size = new System.Drawing.Size(127, 624);
+            this.grpNetworkControls.Size = new System.Drawing.Size(141, 414);
             this.grpNetworkControls.TabIndex = 8;
             this.grpNetworkControls.TabStop = false;
             this.grpNetworkControls.Text = "Network Controls";
@@ -302,17 +312,96 @@
             // 
             this.btnNextNetwork.Location = new System.Drawing.Point(7, 19);
             this.btnNextNetwork.Name = "btnNextNetwork";
-            this.btnNextNetwork.Size = new System.Drawing.Size(113, 23);
+            this.btnNextNetwork.Size = new System.Drawing.Size(128, 23);
             this.btnNextNetwork.TabIndex = 0;
             this.btnNextNetwork.Text = "Next Network";
             this.btnNextNetwork.UseVisualStyleBackColor = true;
             this.btnNextNetwork.Click += new System.EventHandler(this.btnNextNetwork_Click);
             // 
+            // grpHosts
+            // 
+            this.grpHosts.Controls.Add(this.txtHosts);
+            this.grpHosts.Location = new System.Drawing.Point(526, 151);
+            this.grpHosts.Name = "grpHosts";
+            this.grpHosts.Size = new System.Drawing.Size(141, 64);
+            this.grpHosts.TabIndex = 9;
+            this.grpHosts.TabStop = false;
+            this.grpHosts.Text = "Available Hosts";
+            // 
+            // txtHosts
+            // 
+            this.txtHosts.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtHosts.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtHosts.Location = new System.Drawing.Point(7, 21);
+            this.txtHosts.Name = "txtHosts";
+            this.txtHosts.ReadOnly = true;
+            this.txtHosts.Size = new System.Drawing.Size(128, 32);
+            this.txtHosts.TabIndex = 4;
+            this.txtHosts.Text = "0";
+            this.txtHosts.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // grpNetworks
+            // 
+            this.grpNetworks.Controls.Add(this.txtNetworks);
+            this.grpNetworks.Location = new System.Drawing.Point(526, 81);
+            this.grpNetworks.Name = "grpNetworks";
+            this.grpNetworks.Size = new System.Drawing.Size(141, 64);
+            this.grpNetworks.TabIndex = 10;
+            this.grpNetworks.TabStop = false;
+            this.grpNetworks.Text = "Available Subnetworks";
+            // 
+            // txtNetworks
+            // 
+            this.txtNetworks.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.txtNetworks.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNetworks.Location = new System.Drawing.Point(7, 21);
+            this.txtNetworks.Name = "txtNetworks";
+            this.txtNetworks.ReadOnly = true;
+            this.txtNetworks.Size = new System.Drawing.Size(128, 32);
+            this.txtNetworks.TabIndex = 4;
+            this.txtNetworks.Text = "0";
+            this.txtNetworks.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // grpOriginalCIDR
+            // 
+            this.grpOriginalCIDR.Controls.Add(this.label2);
+            this.grpOriginalCIDR.Controls.Add(this.txtOriginalCIDR);
+            this.grpOriginalCIDR.Location = new System.Drawing.Point(526, 12);
+            this.grpOriginalCIDR.Name = "grpOriginalCIDR";
+            this.grpOriginalCIDR.Size = new System.Drawing.Size(141, 63);
+            this.grpOriginalCIDR.TabIndex = 11;
+            this.grpOriginalCIDR.TabStop = false;
+            this.grpOriginalCIDR.Text = "Original Mask";
+            // 
+            // txtOriginalCIDR
+            // 
+            this.txtOriginalCIDR.BackColor = System.Drawing.SystemColors.Window;
+            this.txtOriginalCIDR.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtOriginalCIDR.Location = new System.Drawing.Point(34, 21);
+            this.txtOriginalCIDR.Name = "txtOriginalCIDR";
+            this.txtOriginalCIDR.Size = new System.Drawing.Size(101, 32);
+            this.txtOriginalCIDR.TabIndex = 4;
+            this.txtOriginalCIDR.Text = "0";
+            this.txtOriginalCIDR.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Consolas", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 24);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(22, 24);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "/";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(661, 643);
+            this.ClientSize = new System.Drawing.Size(678, 643);
+            this.Controls.Add(this.grpOriginalCIDR);
+            this.Controls.Add(this.grpNetworks);
+            this.Controls.Add(this.grpHosts);
             this.Controls.Add(this.grpNetworkControls);
             this.Controls.Add(this.grpLastHostAddress);
             this.Controls.Add(this.grpBroadcastAddress);
@@ -320,7 +409,8 @@
             this.Controls.Add(this.grpNetworkID);
             this.Controls.Add(this.grpSubnetMask);
             this.Controls.Add(this.grpHostIPAddress);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "frmMain";
             this.Text = "VLSMSAK";
             this.grpHostIPAddress.ResumeLayout(false);
@@ -336,6 +426,12 @@
             this.grpLastHostAddress.ResumeLayout(false);
             this.grpLastHostAddress.PerformLayout();
             this.grpNetworkControls.ResumeLayout(false);
+            this.grpHosts.ResumeLayout(false);
+            this.grpHosts.PerformLayout();
+            this.grpNetworks.ResumeLayout(false);
+            this.grpNetworks.PerformLayout();
+            this.grpOriginalCIDR.ResumeLayout(false);
+            this.grpOriginalCIDR.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -364,6 +460,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox grpNetworkControls;
         private System.Windows.Forms.Button btnNextNetwork;
+        private System.Windows.Forms.GroupBox grpHosts;
+        private System.Windows.Forms.TextBox txtHosts;
+        private System.Windows.Forms.GroupBox grpNetworks;
+        private System.Windows.Forms.TextBox txtNetworks;
+        private System.Windows.Forms.GroupBox grpOriginalCIDR;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtOriginalCIDR;
     }
 }
 
