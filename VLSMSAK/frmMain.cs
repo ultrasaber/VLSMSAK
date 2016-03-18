@@ -98,5 +98,14 @@ namespace VLSMSAK
             }
             catch (Exception ex) { }
         }
+
+        private void btnNextNetwork_Click(object sender, EventArgs e)
+        {
+            NetworkHost networkHost = new NetworkHost(
+                    new IPv4Address(txtInputHostIP.Text),
+                    new IPv4Address(txtInputSubnetMask.Text));
+
+            txtInputHostIP.Text = networkHost.NextNetworkID.ToString();
+        }
     }
 }

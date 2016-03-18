@@ -92,6 +92,47 @@ namespace Logic
             }
         }
 
+        public IPv4Address NextNetworkID
+        {
+            get
+            {
+                IPv4Address nextNetworkID = new IPv4Address(String.Format("{0}.{1}.{2}.{3}",
+                    this.BroadcastAddress.FirstOctet,
+                    this.BroadcastAddress.SecondOctet,
+                    this.BroadcastAddress.ThirdOctet,
+                    this.BroadcastAddress.FourthOctet + 1));
+
+                if (nextNetworkID.FourthOctet > 255)
+                {
+                    nextNetworkID = new IPv4Address(String.Format("{0}.{1}.{2}.{3}",
+                        nextNetworkID.FirstOctet,
+                        nextNetworkID.SecondOctet,
+                        nextNetworkID.ThirdOctet + 1,
+                        0));
+                }
+
+                if (nextNetworkID.ThirdOctet > 255)
+                {
+                    nextNetworkID = new IPv4Address(String.Format("{0}.{1}.{2}.{3}",
+                        nextNetworkID.FirstOctet,
+                        nextNetworkID.SecondOctet + 1,
+                        0,
+                        0));
+                }
+
+                if (nextNetworkID.SecondOctet > 255)
+                {
+                    nextNetworkID = new IPv4Address(String.Format("{0}.{1}.{2}.{3}",
+                        nextNetworkID.FirstOctet + 1,
+                        0,
+                        0,
+                        0));
+                }
+
+                return nextNetworkID;
+            }
+        }
+
         public int CIDRMaskLength
         {
             get
